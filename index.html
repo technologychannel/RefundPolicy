@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refund Policy - Technology Channel</title>
     <style>
-        html, body {
+         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
@@ -14,6 +14,11 @@
             color: #fff;
             font-family: Arial, sans-serif;
             line-height: 1.6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -28,12 +33,14 @@
         }
 
         main {
+            flex: 1;
             padding: 20px;
             max-width: 800px;
             margin: 20px auto;
             background-color: #414345;
             color: #fff;
             border-radius: 8px;
+            box-sizing: border-box;
         }
 
         h2 {
@@ -49,25 +56,6 @@
             padding: 0 20px;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
         .back-to-home {
             display: block;
             margin: 20px 0;
@@ -81,6 +69,24 @@
 
         .back-to-home:hover {
             background-color: #0c7dc0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
